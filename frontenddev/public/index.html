@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <link rel="stylesheet" href="style.css">
+   <link rel="navbar" href="Navbar.js">
+   <link rel="navbar" href="Navbar.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+   
+    
+ 
+    <title>TimeTable App</title>
+    
+  </head>
+  <body>    
+    <div id="root"></div>
+      <div class="main"></div>
+        <div class="information">
+          <div class="overlay"></div>
+           <img src="images/planner.png" class="planner">
+          <div id="circle">
+           
+            <div class="feature one">
+              <img src="images/graduated.png">
+              <div>
+                <h1>Graduates</h1>
+                <p>Eligible for: Graduates</p>
+              </div>
+            </div>
+            <div class="feature two">
+              <img src="images/student.png">
+              <div>
+                <h1>Students</h1>
+                <p>Eligible for: Students</p>
+              </div>
+            </div>
+            <div class="feature three">
+              <img src="images/teacher.png">
+              <div>
+                <h1>Teachers</h1>
+                <p>Eligible for: Teachers</p>
+              </div>
+            </div>
+            <div class="feature four">
+              <img src="images/parents.png">
+              <div>
+                <h1>Parents</h1>
+                <p>Eligible for: Parents</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="controls">
+          <img src="images/arrowup.png" id="upBtn">
+          <h3>Features</h3>
+          <img src="images/arrowdown.png" id="downBtn">
+        </div>
+   </div>
+   
+   <script>
+     var circle = document.getElementById("circle");
+     var upBtn = document.getElementById("upBtn");
+     var downBtn = document.getElementById("downBtn");
+
+     var rotateValue = circle.style.transform;
+     var rotateSum;
+
+
+     upBtn.onclick = function()
+     {
+       rotateSum = rotateValue + "rotate(-90deg)";
+       circle.style.transform = rotateSum;
+       rotateValue = rotateSum;
+     }
+     downBtn.onclick = function()
+     {
+       rotateSum = rotateValue + "rotate(90deg)";
+       circle.style.transform = rotateSum;
+       rotateValue = rotateSum;
+     }
+
+   </script>
+  <section id="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="promo-title">Timetable Generator</p>
+
+          <li>A week is an entire seven days of opportunities that you would not want to waste to be profitable.</li>
+          <li>Make sure you prepare in advance for your week and stay on top of your weekly events.</li>
+        
+            
+        </div>
+        <div class="col-md-6 text center">
+          <img src="images/working.png" class="img-fluid">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <footer class="footer">
+    <div class="inner-footer">
+      <div class="social-links">
+        <ul>
+          <li class="social items"><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li class="social items"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+          <li class="social items"><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+          <li class="social items"><a href="#"><i class="fab fa-github"></i></i></a></li>
+        </ul>
+      </div>
+  
+      <div class="quick-links">
+        <ul>
+          <li class="quick-items"><a href="#">Home</a></li>
+          <li class="quick-items"><a href="#">Services</a></li>
+          <li class="quick-items"><a href="#">About Us</a></li>
+          <li class="quick-items"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="outer-footer">
+      Copyright &copy; TimeTable App. All Rights Reserved
+    </div>
+  </footer>
+
+  </body>
+</html>
