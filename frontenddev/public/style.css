@@ -3,7 +3,6 @@
     padding: 0;
     font-family: sans-serif;
 }
-
 #banner{
     
     color: gray;
@@ -18,7 +17,6 @@
     font-weight: 600;
     margin-top: 100px;
 }
-  
 #banner a{
     color: gray;
     text-decoration: none;
@@ -28,7 +26,6 @@
     width: 200px;
     right: -20%;
 }
-
 .information {
     width: 500px;
     height: 500px;
@@ -36,8 +33,7 @@
     top: 50%;
     left: -10%;
     transform: translateY(-50%);
-  }
-  
+}
 #circle{
     width: 800px;
     height: 800px;
@@ -47,8 +43,7 @@
     border-radius: 50%;
     transform: rotate(0deg);
     transition: 1s;
-  }
-
+}
 .feature img{
     width: 70px;
 }
@@ -98,8 +93,8 @@
     text-align: center;
 }
 .controls h3{
-   margin: 15px 0;
-   color: white;
+    margin: 15px 0;
+    color: white;
 }
 #upBtn{
     width: 15px;
@@ -120,7 +115,6 @@
     left: 0;
     top: 0;
 }
-
 .footer {
     position: fixed;
     bottom: 0;
@@ -178,4 +172,3 @@
     font-size: 18px;
     background-color: #3f3f3f;
 }
-
